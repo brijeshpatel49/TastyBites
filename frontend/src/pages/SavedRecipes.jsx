@@ -73,7 +73,7 @@ export const SavedRecipes = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div id="recipes-section" className="px-6 py-8 mx-15">
+      <div id="recipes-section" className="px-6 py-8  sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20">
         <h1 className="text-4xl font-bold mb-10 text-center text-yellow-400">
           Saved Recipes
         </h1>
@@ -94,7 +94,7 @@ export const SavedRecipes = () => {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center w-full h-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
             {savedRecipes.map((recipe) => (
               <RecipeCard
                 key={recipe._id}
